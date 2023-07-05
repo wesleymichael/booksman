@@ -1,0 +1,75 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "booksman",
+    "dateExported": "2023-07-05T14:28:40.445Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "385c2bac-8917-42cc-8441-297e63563881",
+            "colId": "b5355bee-685b-4435-b4e2-9ea914228801",
+            "containerId": "",
+            "name": "GET /books",
+            "url": "http://localhost:5000/books",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-07-05T14:05:20.810Z",
+            "modified": "2023-07-05T14:06:12.207Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "371137d2-44cc-4471-9401-7cdeff5b40d0",
+            "colId": "b5355bee-685b-4435-b4e2-9ea914228801",
+            "containerId": "",
+            "name": "GET /books/:id",
+            "url": "http://localhost:5000/books/1",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-07-05T14:06:00.927Z",
+            "modified": "2023-07-05T14:07:51.043Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "531c606b-0223-491b-93c4-b284da3e8bce",
+            "colId": "b5355bee-685b-4435-b4e2-9ea914228801",
+            "containerId": "",
+            "name": "POST /books",
+            "url": "http://localhost:5000/books",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-07-05T14:07:56.488Z",
+            "modified": "2023-07-05T14:10:56.131Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"API Book\",\n  \"author\": \"API Author\",\n  \"publisher\": \"API Publisher\",\n  \"purchaseDate\": \"2011-12-21\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "af5f2206-545e-43f3-86e9-342dc1146683",
+            "colId": "b5355bee-685b-4435-b4e2-9ea914228801",
+            "containerId": "",
+            "name": "POST /review",
+            "url": "http://localhost:5000/books/reviews",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-07-05T14:11:52.228Z",
+            "modified": "2023-07-05T14:15:15.050Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"bookId\": 1,\n  \"grade\": 5,\n  \"review\": \"Horrible, i hate it. I just got to the end to see if i could take it. And man... I mean, the author is just too simple in his narrative. Nothing never happens, it is just too boring.\"\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ]
+}
